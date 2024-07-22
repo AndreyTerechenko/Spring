@@ -1,9 +1,8 @@
-package service;
+package com.andreytereshchenko.store.service;
 
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Set;
 
 @Service
 public class StoreService {
@@ -17,7 +16,7 @@ public class StoreService {
         basket.add(items);
     }
 
-    public Set<Long> getall() {
+    public List<Long> getall() {
         return basket.getall();
     }
 
